@@ -4,3 +4,7 @@ configMapGenerator:
   - name: xxx
     envs:
       - config.env
+secretGenerator:
+  - name: yyy
+    envs:
+      - secrets.env
