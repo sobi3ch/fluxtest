@@ -7,4 +7,4 @@ configMapGenerator:
 secretGenerator:
   - name: yyy
     envs:
-      - secrets.env
+      - secrets.env.sops
