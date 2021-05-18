@@ -19,12 +19,12 @@ spec:
           name: nginx
           resources: {}
           env:
-            - name: SECRET_KEY
+            - name: KEY
               valueFrom:
                 secretKeyRef:
                   name: yyy
                   key: KEY
-            - name: SECRET_TOKEN
+            - name: TOKEN
               valueFrom:
                 secretKeyRef:
                   name: yyy
