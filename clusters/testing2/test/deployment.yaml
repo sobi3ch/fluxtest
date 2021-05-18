@@ -22,5 +22,5 @@ spec:
             - name: SECRET_KEY
               valueFrom:
                 secretKeyRef:
-                  name: manga
+                  name: yyy
                   key: KEY

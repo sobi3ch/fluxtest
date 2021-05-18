@@ -5,7 +5,7 @@ configMapGenerator:
     envs:
       - config.env
 secretGenerator:
-  - name: manga
+  - name: yyy
     envs:
       - secrets.sops.env
 resources:
