@@ -24,3 +24,8 @@ spec:
                 secretKeyRef:
                   name: yyy
                   key: KEY
+            - name: SECRET_TOKEN
+              valueFrom:
+                secretKeyRef:
+                  name: yyy
+                  key: TOKEN
