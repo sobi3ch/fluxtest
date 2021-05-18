@@ -8,3 +8,5 @@ secretGenerator:
   - name: manga
     envs:
       - secrets.sops.env
+resources:
+  - "deployment.yaml"

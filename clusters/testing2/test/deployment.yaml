@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: sops
+  name: sops
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sops
+  template:
+    metadata:
+      labels:
+        app: sops
+    spec:
+      containers:
+        - image: nginx
+          name: nginx
+          resources: {}
+          env:
+            - name: SECRET_KEY
+              valueFrom:
+                secretKeyRef:
+                  name: manga
+                  key: username
