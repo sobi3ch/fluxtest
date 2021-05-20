@@ -1,4 +1,0 @@
-creation_rules:
-  - path_regex: secrets.*
-    encrypted_regex: "^(data|stringData)$"
-    pgp: "3B69609F61F5F9AE2E8E2B5F11A51F7BF981BFE8"
